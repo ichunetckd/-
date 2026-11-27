@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08245b">
+  <meta name="description" content="ICHUNETCKD Digital — Poster design and digital promotion in Chekkiyad, Kerala.">
+  <title>ICHUNETCKD Digital | Design • Promote • Grow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Malayalam:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:#08245b; --blue:#1268d8; --sky:#dceeff; --ink:#14213d;
+      --muted:#65738d; --paper:#f5f8fd; --line:#e4ebf5; --white:#fff;
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:78px; }
+    body { margin:0; color:var(--ink); background:#fff; font-family:Manrope,"Noto Sans Malayalam",sans-serif; line-height:1.65; }
+    .ml { font-family:"Noto Sans Malayalam",Manrope,sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    .container { width:min(1080px,calc(100% - 36px)); margin:auto; }
+    .topline { height:4px; background:linear-gradient(90deg,#0b55c5,#35b6f4,#a9e6ff); }
+    header { position:sticky; top:0; z-index:20; background:rgba(255,255,255,.97); border-bottom:1px solid var(--line); }
+    .nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { display:flex; align-items:center; gap:10px; color:var(--navy); font-weight:800; font-size:17px; letter-spacing:-.4px; }
+    .mark { width:43px; height:43px; border-radius:14px; display:grid; place-items:center; color:white; background:linear-gradient(145deg,#1688ef,#073b9c); box-shadow:0 6px 16px #1268d833; flex:none; }
+    .mark svg { width:27px; height:27px; }
+    .brand small { display:block; color:var(--blue); font-size:10px; letter-spacing:2.5px; line-height:1.2; }
+    .navlinks { display:flex; align-items:center; gap:22px; color:#40506d; font-size:13px; font-weight:700; }
+    .navlinks a:hover { color:var(--blue); }
+    .menu { display:none; border:0; border-radius:11px; padding:10px 12px; background:#edf4ff; color:var(--navy); font-size:20px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 19px; border-radius:999px; background:var(--blue); color:white; font-size:13px; font-weight:800; }
+    .btn:hover { background:#0754b7; }
+    .btn-light { background:white; color:var(--navy); }
+    .btn-light:hover { background:#eaf3ff; }
+    .hero { background:linear-gradient(130deg,#071b49,#0a438e); color:white; padding:66px 0 62px; }
+    .hero-inner { max-width:790px; }
+    .eyebrow { display:inline-flex; align-items:center; gap:9px; border:1px solid #ffffff44; border-radius:999px; padding:7px 13px; color:#d9efff; font-size:11px; font-weight:800; letter-spacing:1.1px; }
+    .dot { width:8px; height:8px; border-radius:50%; background:#6be0ff; flex:none; }
+    h1 { margin:22px 0 16px; max-width:100%; font-size:clamp(34px,7vw,58px); line-height:1.16; letter-spacing:-1.5px; overflow-wrap:break-word; }
+    h1 .ml { display:block; margin-top:8px; color:#8bdcff; font-size:clamp(27px,6.2vw,43px); line-height:1.5; letter-spacing:0; overflow-wrap:anywhere; word-break:normal; }
+    .hero p { max-width:650px; margin:0 0 24px; color:#e0edff; font-size:15px; }
+    .actions { display:flex; flex-wrap:wrap; gap:11px; }
+    .hero-note { margin-top:22px; color:#c1d7f4; font-size:12px; letter-spacing:.5px; }
+    section { padding:64px 0; }
+    .section-head { max-width:680px; margin:0 auto 32px; text-align:center; }
+    .kicker { color:var(--blue); font-size:11px; font-weight:800; letter-spacing:1.8px; }
+    .section-head h2 { margin:8px 0 10px; color:var(--navy); font-size:clamp(26px,4.5vw,38px); line-height:1.25; }
+    .section-head p { margin:0; color:var(--muted); font-size:14px; }
+    .services { background:var(--paper); }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; }
+    .card { padding:22px; border:1px solid var(--line); border-radius:17px; background:white; }
+    .icon { width:43px; height:43px; display:grid; place-items:center; margin-bottom:13px; border-radius:13px; background:#eaf3ff; color:var(--blue); font-size:21px; }
+    .card h3 { margin:0 0 6px; font-size:16px; }
+    .card p { margin:0; color:var(--muted); font-size:13px; }
+    .portfolio-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .sample { min-height:230px; padding:18px; border-radius:17px; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden; }
+    .sample small { font-size:10px; font-weight:800; letter-spacing:1.5px; }
+    .sample h3 { max-width:230px; margin:0; font-size:27px; line-height:1.12; }
+    .sample p { margin:8px 0 0; font-size:12px; }
+    .sample.business { color:white; background:linear-gradient(145deg,#08245b,#167de9); }
+    .sample.event { color:#392650; background:linear-gradient(145deg,#fff0b6,#ffb747); }
+    .sample.celebrate { color:#064b43; background:linear-gradient(145deg,#d8fff0,#43c69b); }
+    .sample.islamic { color:white; background:linear-gradient(145deg,#073d4b,#0c927e); }
+    .sample.social { color:#fff; background:linear-gradient(145deg,#45236e,#b0449b); }
+    .sample.branding { color:#14325c; background:linear-gradient(145deg,#e7f1ff,#9fc7ff); }
+    .price-section { background:var(--paper); }
+    .price-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; }
+    .price-card { padding:22px; border:1px solid var(--line); border-radius:17px; background:#fff; }
+    .price-card h3 { margin:0 0 5px; font-size:16px; }
+    .price { color:var(--blue); font-size:28px; font-weight:800; letter-spacing:-1px; }
+    .price-card p { margin:5px 0 14px; color:var(--muted); font-size:12px; }
+    .price-card .btn { width:100%; padding:10px 12px; }
+    .price-note { margin:18px auto 0; max-width:760px; text-align:center; color:var(--muted); font-size:12px; }
+    .about { display:grid; grid-template-columns:.8fr 1.2fr; align-items:center; gap:35px; }
+    .about-box { padding:27px; border-radius:19px; background:linear-gradient(145deg,#eaf4ff,#f8fbff); border:1px solid #dbeaff; }
+    .about-box strong { display:block; color:var(--navy); font-size:29px; line-height:1.2; }
+    .about-box span { display:block; margin-top:14px; color:var(--blue); font-size:11px; font-weight:800; letter-spacing:2px; }
+    .about-copy h2 { margin:0 0 10px; color:var(--navy); font-size:29px; line-height:1.25; }
+    .about-copy p { color:var(--muted); font-size:14px; }
+    .contact { color:white; background:linear-gradient(130deg,#071b49,#0b438f); }
+    .contact .section-head h2 { color:white; }
+    .contact .section-head p { color:#d5e5ff; }
+    .contact-box { max-width:760px; margin:auto; padding:25px; display:flex; align-items:center; justify-content:space-between; gap:20px; border:1px solid #ffffff40; border-radius:18px; background:#ffffff12; }
+    .contact-box h3 { margin:0 0 5px; font-size:21px; }
+    .contact-box p { margin:0; color:#d4e5ff; font-size:13px; }
+    footer { padding:23px 0; background:#04112e; color:#c4d3ec; font-size:12px; }
+    .foot { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+    @media(max-width:760px) {
+      .nav { min-height:66px; }
+      .menu { display:block; }
+      .navlinks { display:none; position:absolute; top:66px; left:0; right:0; padding:16px 20px 20px; flex-direction:column; align-items:flex-start; gap:15px; background:white; border-bottom:1px solid var(--line); }
+      .navlinks.open { display:flex; }
+      .cards,.price-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .portfolio-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .about { grid-template-columns:1fr; }
+    }
+    @media(max-width:480px) {
+      .container { width:calc(100% - 28px); }
+      .hero { padding:48px 0 45px; }
+      h1 { font-size:34px; letter-spacing:-1px; line-height:1.2; }
+      h1 .ml { font-size:clamp(24px,7.3vw,31px); line-height:1.55; }
+      .hero p { font-size:14px; }
+      section { padding:52px 0; }
+      .cards,.price-grid,.portfolio-grid { grid-template-columns:1fr; }
+      .sample { min-height:190px; }
+      .contact-box { align-items:flex-start; flex-direction:column; }
+      .contact-box .btn { width:100%; }
+      .brand { font-size:15px; }
+    }
+    @media(prefers-reduced-motion:reduce) { html{scroll-behavior:auto} }
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="ICHUNETCKD Digital home">
+        <span class="mark"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M7 5h5v22H7zM15 5h10l-5 6h-5zM15 21h10l-5 6h-5z" fill="currentColor"/><path d="m14 12 10 4-10 4z" fill="#8fe5ff"/></svg></span>
+        <span>ICHUNETCKD<small>DIGITAL</small></span>
+      </a>
+      <nav class="navlinks" id="navlinks">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Gallery</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+      </nav>
+      <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="eyebrow"><span class="dot"></span> YOUR LOCAL DIGITAL DESIGN PARTNER</div>
+          <h1>Ideas into impact.
+            <span class="ml">നിങ്ങളുടെ ആശയങ്ങൾക്ക്<br>ഡിജിറ്റൽ രൂപം.</span>
+          </h1>
+          <p>Creative poster design and digital promotion for shops, businesses, events and special moments. നിങ്ങളുടെ ആവശ്യങ്ങൾക്ക് മനോഹരമായ ഡിസൈനുകൾ.</p>
+          <div class="actions">
+            <a class="btn btn-light" href="https://wa.me/919645564510?text=Hello%20ICHUNETCKD%20Digital%2C%20I%20need%20a%20poster%20design." target="_blank" rel="noopener">WhatsApp വഴി ഓർഡർ ചെയ്യാം ↗</a>
+            <a class="btn" href="#services">സേവനങ്ങൾ കാണുക ↓</a>
+          </div>
+          <div class="hero-note">DESIGN • PROMOTE • GROW &nbsp; | &nbsp; CHEKKIYAD, KERALA</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head"><div class="kicker">OUR SERVICES</div><h2>നിങ്ങൾക്കാവശ്യമായ എല്ലാ ഡിസൈനുകളും</h2><p>For shops, businesses, events and personal occasions.</p></div>
+        <div class="cards">
+          <article class="card"><div class="icon">✦</div><h3>Poster Design</h3><p class="ml">പരസ്യങ്ങൾ, ഓഫറുകൾ, അറിയിപ്പുകൾ തുടങ്ങി എല്ലാ തരത്തിലുള്ള പോസ്റ്ററുകളും.</p></article>
+          <article class="card"><div class="icon">◎</div><h3>Social Media</h3><p class="ml">WhatsApp Status, Instagram, Facebook എന്നിവയ്ക്കുള്ള ഡിസൈനുകൾ.</p></article>
+          <article class="card"><div class="icon">▣</div><h3>Business Promotion</h3><p class="ml">കടകൾക്കും സ്ഥാപനങ്ങൾക്കും ഉൽപ്പന്നങ്ങൾക്കും പ്രമോഷൻ ഡിസൈനുകൾ.</p></article>
+          <article class="card"><div class="icon">✧</div><h3>Event & Function</h3><p class="ml">പരിപാടികൾ, ഉദ്ഘാടനങ്ങൾ, ക്ഷണക്കത്തുകൾ, അറിയിപ്പുകൾ.</p></article>
+          <article class="card"><div class="icon">♡</div><h3>Birthday & Wedding</h3><p class="ml">ജന്മദിനം, വിവാഹം, ആശംസകൾ, പ്രത്യേക ദിനങ്ങൾ.</p></article>
+          <article class="card"><div class="icon">⌘</div><h3>Logo & Branding</h3><p class="ml">ലോഗോ ആശയങ്ങൾ, ബിസിനസ് ഐഡന്റിറ്റി ഡിസൈനുകൾ.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-head"><div class="kicker">DESIGN GALLERY</div><h2>ഞങ്ങളുടെ ഡിസൈൻ വിഭാഗങ്ങൾ</h2><p>Sample concepts — നിങ്ങളുടെ ആവശ്യത്തിന് അനുസരിച്ച് ഡിസൈൻ തയ്യാറാക്കും.</p></div>
+        <div class="portfolio-grid">
+          <article class="sample business"><small>01 / BUSINESS</small><div><h3>Big offers.<br>Bold impact.</h3><p>Shop & product promotions</p></div></article>
+          <article class="sample event"><small>02 / EVENTS</small><div><h3>Make it<br>memorable.</h3><p>Programs & invitations</p></div></article>
+          <article class="sample celebrate"><small>03 / CELEBRATION</small><div><h3>Celebrate<br>beautifully.</h3><p>Birthday & wedding designs</p></div></article>
+          <article class="sample islamic"><small>04 / COMMUNITY</small><div><h3>Share your<br>message.</h3><p>Islamic & community posters</p></div></article>
+          <article class="sample social"><small>05 / SOCIAL MEDIA</small><div><h3>Get noticed<br>online.</h3><p>Status & social media creatives</p></div></article>
+          <article class="sample branding"><small>06 / BRANDING</small><div><h3>Build your<br>identity.</h3><p>Logo & business branding</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="price-section" id="pricing">
+      <div class="container">
+        <div class="section-head"><div class="kicker">STARTING PRICES</div><h2>ലളിതമായ നിരക്കുകൾ</h2><p>Affordable design options for individuals and businesses.</p></div>
+        <div class="price-grid">
+          <article class="price-card"><h3>Basic Poster</h3><div class="price">₹149</div><p class="ml">ലളിതമായ ഒരു പോസ്റ്റർ ഡിസൈൻ.</p><a class="btn" href="https://wa.me/919645564510?text=I%20am%20interested%20in%20the%20Basic%20Poster%20design.">ഓർഡർ ചെയ്യുക</a></article>
+          <article class="price-card"><h3>Custom Poster</h3><div class="price">₹249</div><p class="ml">കൂടുതൽ വിശദാംശങ്ങളുള്ള കസ്റ്റം ഡിസൈൻ.</p><a class="btn" href="https://wa.me/919645564510?text=I%20am%20interested%20in%20the%20Custom%20Poster%20design.">ഓർഡർ ചെയ്യുക</a></article>
+          <article class="price-card"><h3>Premium Event Poster</h3><div class="price">₹399</div><p class="ml">പരിപാടികൾക്കും പ്രത്യേക അവസരങ്ങൾക്കും.</p><a class="btn" href="https://wa.me/919645564510?text=I%20am%20interested%20in%20the%20Premium%20Event%20Poster.">ഓർഡർ ചെയ്യുക</a></article>
+          <article class="price-card"><h3>Social Media Creative</h3><div class="price">₹149</div><p class="ml">സ്റ്റാറ്റസ്, Instagram, Facebook ഡിസൈനുകൾ.</p><a class="btn" href="https://wa.me/919645564510?text=I%20am%20interested%20in%20a%20Social%20Media%20Creative.">ഓർഡർ ചെയ്യുക</a></article>
+          <article class="price-card"><h3>Logo Design</h3><div class="price">₹499</div><p class="ml">ലളിതമായ ബിസിനസ് ലോഗോ ഡിസൈൻ.</p><a class="btn" href="https://wa.me/919645564510?text=I%20am%20interested%20in%20Logo%20Design.">ഓർഡർ ചെയ്യുക</a></article>
+          <article class="price-card"><h3>5 Poster Package</h3><div class="price">₹999</div><p class="ml">സ്ഥാപനങ്ങൾക്കായി 5 പോസ്റ്ററുകളുടെ പാക്കേജ്.</p><a class="btn" href="https://wa.me/919645564510?text=I%20am%20interested%20in%20the%205%20Poster%20Package.">ഓർഡർ ചെയ്യുക</a></article>
+        </div>
+        <p class="price-note ml">മുകളിൽ നൽകിയിരിക്കുന്നത് നിർദേശിച്ച തുടക്കവിലകളാണ്. ഡിസൈനിന്റെ സങ്കീർണ്ണതയും ആവശ്യങ്ങളും അനുസരിച്ച് അന്തിമ നിരക്ക് WhatsApp വഴി സ്ഥിരീകരിക്കും.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about">
+        <div class="about-box"><strong>Design that speaks for you.</strong><span>ICHUNETCKD DIGITAL</span></div>
+        <div class="about-copy"><div class="kicker">ABOUT US</div><h2>നിങ്ങളുടെ ആശയങ്ങൾക്ക് മനോഹരമായ ഡിജിറ്റൽ രൂപം.</h2><p class="ml">ICHUNETCKD Digital ഒരു പ്രാദേശിക ഡിജിറ്റൽ ഡിസൈൻ സേവന സംരംഭമാണ്. വ്യക്തികൾക്കും കടകൾക്കും സ്ഥാപനങ്ങൾക്കും ആവശ്യാനുസരണം ആകർഷകമായ പോസ്റ്ററുകളും സോഷ്യൽ മീഡിയ ക്രിയേറ്റീവുകളും ഒരുക്കുകയാണ് ഞങ്ങളുടെ ലക്ഷ്യം.</p><p>Creative designs • Friendly communication • Affordable options</p></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-head"><div class="kicker" style="color:#9cddff">CONTACT US</div><h2>നിങ്ങൾക്ക് ഒരു ഡിസൈൻ വേണോ?</h2><p class="ml">നിങ്ങളുടെ ആവശ്യങ്ങൾ WhatsApp വഴി അറിയിക്കൂ. നമുക്ക് ഒരുമിച്ച് നല്ലൊരു ഡിസൈൻ തയ്യാറാക്കാം.</p></div>
+        <div class="contact-box">
+          <div><h3>ICHUNETCKD Digital</h3><p>Design • Promote • Grow<br>Chekkiyad, Kerala</p><p style="margin-top:10px;color:white;font-weight:800">WhatsApp: +91 96455 64510</p></div>
+          <a class="btn btn-light" href="https://wa.me/919645564510?text=Hello%20ICHUNETCKD%20Digital%2C%20I%20would%20like%20to%20enquire%20about%20your%20design%20services." target="_blank" rel="noopener">WhatsApp Chat ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container foot"><div>© <span id="year"></span> ICHUNETCKD Digital. All rights reserved.</div><div>Design • Promote • Grow</div></div></footer>
+
+  <script>
+    const menu = document.getElementById('menu');
+    const links = document.getElementById('navlinks');
+    menu.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      menu.setAttribute('aria-expanded', String(open));
+      menu.textContent = open ? '✕' : '☰';
+    });
+    links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      links.classList.remove('open');
+      menu.setAttribute('aria-expanded', 'false');
+      menu.textContent = '☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

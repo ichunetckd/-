@@ -5,60 +5,92 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ICHUNETCKD NEWS ROOM</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#020617;color:white;font-family:Arial,sans-serif;text-align:center;overflow-x:hidden}
-
-/* DJ Lights */
-.light{position:fixed;width:120px;height:120px;border-radius:50%;filter:blur(40px);opacity:.8;animation:blink 1s infinite alternate;z-index:0}
-.l1{top:0;left:5%;background:#ff0055}
-.l2{top:0;right:5%;background:#00ccff;animation-delay:.2s}
-.l3{bottom:10%;left:10%;background:#00ff88;animation-delay:.4s}
-.l4{bottom:10%;right:10%;background:#ffcc00;animation-delay:.6s}
-@keyframes blink{from{opacity:.3;transform:scale(.8)}to{opacity:1;transform:scale(1.3)}}
-
-/* Header */
-header{position:relative;z-index:2;background:rgba(0,0,0,.6);padding:16px;text-align:center}
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+body{background:#FFF8E7}
+header{background:#1A5D1A;color:white;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
 header b{font-size:20px;letter-spacing:1px}
-
-/* Logo */
-.logo-wrap{position:relative;z-index:2;margin-top:30px;display:flex;flex-direction:column;align-items:center}
-.logo-box{width:230px;height:230px;background:linear-gradient(135deg,#007bff,#00c6ff,#0047ff);border-radius:45px;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 0 60px #00aaff}
-.i-e{font-size:130px;font-weight:900;letter-spacing:-8px}
-.earth{font-size:85px;display:inline-block;animation:spin 4s linear infinite}
+.logo-banner{background:#020617;padding:30px 15px 25px;text-align:center;position:relative;overflow:hidden}
+.light{position:absolute;width:110px;height:110px;border-radius:50%;filter:blur(35px);opacity:.85;animation:blink .8s infinite alternate}
+.l1{top:-10px;left:3%;background:#ff0055}.l2{top:-10px;left:30%;background:#00ccff;animation-delay:.15s}.l3{top:-10px;right:30%;background:#ffcc00;animation-delay:.3s}.l4{top:-10px;right:3%;background:#ff00ff;animation-delay:.45s}.l5{bottom:0;left:12%;background:#00ff88;animation-delay:.6s}.l6{bottom:0;right:12%;background:#ff6600;animation-delay:.75s}
+@keyframes blink{from{opacity:.3;transform:scale(.7)}to{opacity:1;transform:scale(1.35)}}
+.beam{position:absolute;top:-10px;width:5px;height:220px;transform-origin:top;animation:swing 1.8s infinite alternate;opacity:.7}
+.b1{left:18%;background:linear-gradient(to bottom,#ff0055,transparent)}.b2{left:50%;background:linear-gradient(to bottom,#00ccff,transparent);animation-delay:.4s}.b3{left:82%;background:linear-gradient(to bottom,#ffcc00,transparent);animation-delay:.8s}
+@keyframes swing{from{transform:rotate(-22deg)}to{transform:rotate(22deg)}}
+.spark{position:absolute;font-size:18px;animation:sparkle 1s infinite alternate;z-index:3}
+.s1{top:15%;left:12%}.s2{top:25%;right:14%;animation-delay:.2s}.s3{top:55%;left:8%;animation-delay:.4s}.s4{top:50%;right:8%;animation-delay:.6s}.s5{top:10%;left:48%;animation-delay:.8s}.s6{bottom:15%;left:42%;animation-delay:1s}
+@keyframes sparkle{from{opacity:.2;transform:scale(.6)}to{opacity:1;transform:scale(1.4)}}
+.logo-box{width:175px;height:175px;margin:0 auto;background:linear-gradient(135deg,#007bff,#00c6ff,#0047ff);border-radius:38px;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 0 60px #00aaff;z-index:2}
+.i-e{font-size:98px;font-weight:900;letter-spacing:-6px;color:white;line-height:1}
+.earth{font-size:64px;display:inline-block;animation:spin 3.5s linear infinite}
 @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-.play{position:absolute;right:15px;top:50%;transform:translateY(-50%);font-size:38px;color:#bfe6ff}
-
-h1{margin-top:18px;font-size:34px;letter-spacing:2px}
-.news-room{margin-top:6px;font-size:40px;font-weight:900;color:#00e5ff;text-shadow:0 0 10px #00e5ff,0 0 30px #00e5ff,0 0 60px #0088ff;animation:neon 1s infinite alternate}
+.play-btn{position:absolute;right:-8px;top:50%;transform:translateY(-50%);width:58px;height:58px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;color:#007bff;box-shadow:0 0 20px white,0 0 40px #00ccff;z-index:5;animation:pulse 1s infinite alternate}
+@keyframes pulse{from{transform:translateY(-50%) scale(1)}to{transform:translateY(-50%) scale(1.12)}}
+.logo-banner h1{color:white;font-size:30px;margin-top:16px;position:relative;z-index:2}
+.news-room{font-size:36px;font-weight:900;color:#00e5ff;text-shadow:0 0 10px #00e5ff,0 0 30px #00e5ff,0 0 70px #0088ff;animation:neon .9s infinite alternate;margin-top:5px;position:relative;z-index:2}
 @keyframes neon{from{opacity:.7}to{opacity:1}}
-.tag{margin-top:14px;font-size:16px;opacity:.85;background:rgba(255,255,255,.1);padding:10px 20px;border-radius:30px;display:inline-block}
-.cards{display:flex;gap:12px;justify-content:center;margin:25px 12px;flex-wrap:wrap;position:relative;z-index:2}
-.card{background:#0f172a;border:1px solid #1e293b;padding:16px;border-radius:16px;width:150px}
-.card b{font-size:16px}
-.card p{font-size:13px;opacity:.8;margin-top:6px}
-
-/* Footer */
-footer{margin-top:30px;padding:16px;background:#000;font-size:13px;opacity:.9;position:relative;z-index:2}
+.tagline{color:#ddd;font-size:14px;margin-top:8px;position:relative;z-index:2}
+.ticker{background:#D32F2F;color:white;overflow:hidden;padding:9px 0;font-size:14px;font-weight:bold;white-space:nowrap}
+.track{display:flex;width:max-content;animation:move 20s linear infinite}
+.track span{padding:0 25px}
+@keyframes move{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.wrap{max-width:700px;margin:15px auto;padding:0 12px}
+.hero{background:linear-gradient(135deg,#1A5D1A,#2E7D32);color:white;border-radius:16px;padding:25px 20px;text-align:center;margin-bottom:20px}
+.hero h1{font-size:28px;margin-bottom:8px}
+.hero p{font-size:15px;line-height:1.6;opacity:.9}
+.section-title{font-size:20px;font-weight:bold;margin:20px 0 12px 2px;border-left:5px solid #1A5D1A;padding-left:10px}
+.card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,.1);margin-bottom:20px}
+.card img{width:100%;display:block}
+.card div{padding:18px}
+.badge{background:#FFC107;color:#000;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:bold;display:inline-block;margin-bottom:10px}
+.badge-green{background:#1A5D1A;color:white}
+.card h2{font-size:22px;line-height:1.4;margin-bottom:8px}
+.card p{font-size:15px;line-height:1.7;color:#444}
+.btn{display:block;background:#1A5D1A;color:white;text-align:center;padding:13px;border-radius:10px;text-decoration:none;font-weight:bold;margin-top:14px}
+.btn-green{background:#25D366;font-size:18px}
+.whatsapp-box{background:#DCF8C6;border:2px solid #25D366;border-radius:16px;padding:20px;text-align:center;margin-bottom:20px}
+.whatsapp-box h2{font-size:22px;margin-bottom:8px}
+.whatsapp-box p{font-size:15px;line-height:1.7;color:#333}
+footer{text-align:center;padding:20px;color:#888;font-size:13px}
 </style>
 </head>
 <body>
-<div class="light l1"></div><div class="light l2"></div><div class="light l3"></div><div class="light l4"></div>
-
-<header><b>ICHUNETCKD NEWS ROOM</b></header>
-
-<div class="logo-wrap">
-  <div class="logo-box"><div class="i-e">I<span class="earth">🌍</span>E</div><div class="play">▶</div></div>
-  <h1>ICHUNETCKD</h1>
-  <div class="news-room">ന്യൂസ് റൂം</div>
-  <div class="tag">LIVE • BREAKING • NEWS</div>
+<header><b>ICHUNETCKD NEWS ROOM</b><span>🔴 LIVE</span></header>
+<div class="logo-banner">
+<div class="light l1"></div><div class="light l2"></div><div class="light l3"></div><div class="light l4"></div><div class="light l5"></div><div class="light l6"></div>
+<div class="beam b1"></div><div class="beam b2"></div><div class="beam b3"></div>
+<div class="spark s1">✨</div><div class="spark s2">⭐</div><div class="spark s3">✨</div><div class="spark s4">⭐</div><div class="spark s5">✨</div><div class="spark s6">⭐</div>
+<div class="logo-box"><div class="i-e">I<span class="earth">🌍</span>E</div><div class="play-btn">▶</div></div>
+<h1>ICHUNETCKD</h1><div class="news-room">ന്യൂസ് റൂം</div><div class="tagline">LIVE • BREAKING • NEWS</div>
 </div>
+<div class="ticker"><div class="track">
+<span>💡 BREAKING: മുണ്ടോളി പള്ളി പരിസരം പ്രകാശപൂരിതമായി! •</span>
+<span>🎤 നമ്മുടെ കൊച്ചു ഗായകൻ മുഹമ്മദ് ഏ.കെ •</span>
+<span>❤️ കാന്തപുരം - പ്രവർത്തികൾ തന്നെയാണ് വിലാസം •</span>
+<span>💡 BREAKING: മുണ്ടോളി പള്ളി പരിസരം പ്രകാശപൂരിതമായി! •</span>
+<span>🎤 നമ്മുടെ കൊച്ചു ഗായകൻ മുഹമ്മദ് ഏ.കെ •</span>
+<span>❤️ കാന്തപുരം - പ്രവർത്തികൾ തന്നെയാണ് വിലാസം •</span>
+</div></div>
+<div class="wrap">
+<div class="hero"><h1>🌴 നമ്മുടെ നാട്</h1><p>നമ്മുടെ നാടിന്റെ സ്നേഹവും, വാർത്തകളും, വിശേഷങ്ങളും - എല്ലാം ഒരിടത്ത്!</p></div>
 
-<div class="cards">
-  <div class="card"><b>🔴 LIVE</b><p>ലൈവ് ന്യൂസ്</p></div>
-  <div class="card"><b>📰 വാർത്ത</b><p>നമ്മുടെ വാർത്ത</p></div>
-  <div class="card"><b>🌦️ കാലാവസ്ഥ</b><p>ഇന്നത്തെ കാലാവസ്ഥ</p></div>
+<div class="section-title">🎤 പുതിയ വാർത്ത</div>
+<div class="card"><div><span class="badge">🎤 കൊച്ചു ഗായകൻ</span><h2>🎤 നമ്മുടെ കൊച്ചു ഗായകൻ!</h2><p>മുഹമ്മദ് ഏ.കെ യുടെ മനോഹരമായ പാട്ട് ❤️ ഈ കൊച്ചു മിടുക്കന്റെ ശബ്ദം കേട്ട് നോക്കൂ!</p><a class="btn btn-green" href="muhammed-ak.html">▶️ വീഡിയോ കാണൂ</a></div></div>
+
+<div class="section-title">🔴 പുതിയ വാർത്ത</div>
+<div class="card"><img src="Screenshot_20261128-100515%7E2.jpg" onerror="this.src='https://ichunetckd.github.io/Screenshot_20261128-100515%7E2.jpg'" alt="മുണ്ടോളി പള്ളി"><div><span class="badge">🔴 പുതിയ വാർത്ത</span><h2>മുണ്ടോളി പള്ളി പരിസരം ഇന്ന് പ്രകാശപൂരിതമായി!</h2><p>പുതിയ മിനി മാസ്റ്റ് ലൈറ്റ് പ്രവർത്തിച്ച് തുടങ്ങി. NK ചന്ദ്രിക ടീച്ചറുടെ നിവേദനത്തിലൂടെയാണ് ഈ പ്രകാശം ലഭിച്ചത്.</p><a class="btn" href="mundoli.html">👉 മുഴുവൻ വാർത്ത വായിക്കൂ</a></div></div>
+
+<div class="section-title">❤️ പ്രത്യേക വാർത്ത</div>
+<div class="card"><div><span class="badge">❤️ കാന്തപുരം</span><h2>കാന്തപുരം - പ്രവർത്തികൾ തന്നെയാണ് വിലാസം</h2><p>5,000+ വിദ്യാർത്ഥികൾക്ക് സൗജന്യ വിദ്യാഭ്യാസം, 21,841+ അനാഥ കുട്ടികൾക്ക് സംരക്ഷണം, 17,000+ വീടുകൾ... അദ്ദേഹം മറുപടി നൽകുന്നത് വാക്കുകൾ കൊണ്ടല്ല, പ്രവർത്തികൾ കൊണ്ടാണ്!</p><a class="btn" href="kanthapuram.html">👉 വീഡിയോയോടെ മുഴുവൻ വാർത്ത വായിക്കൂ</a></div></div>
+
+<div class="section-title">🌴 നമ്മുടെ നാട് - കുറിച്ച്</div>
+<div class="card"><div><span class="badge badge-green">🌴 നമ്മുടെ നാട്</span><h2>നമ്മുടെ നാട്, നമ്മുടെ അഭിമാനം</h2><p>പച്ചപുതച്ച വയലുകളും, മലകളും, തോടുകളും, തെങ്ങിൻ തോപ്പുകളും ചേർന്ന പ്രകൃതി ഭംഗിയുള്ള നാട്.</p><p>ഹിന്ദുവും മുസ്ലീമും ക്രിസ്ത്യാനിയും ഒരുമിച്ച് സ്നേഹത്തോടെയും സാഹോദര്യത്തോടെയും ജീവിക്കുന്ന നാടാണിത്.</p><p>എവിടെ പോയാലും, എത്ര ദൂരെ പോയാലും മനസ്സിൽ എന്നും <b>നമ്മുടെ നാട്</b> തന്നെ!</p></div></div>
+
+<div class="section-title">📰 SSF വാർത്ത</div>
+<div class="card"><div><span class="badge">📰 SSF വാർത്ത</span><h2>SSF യൂണിറ്റ് വാർത്തകൾ</h2><p>SSF-ന്റെ എല്ലാ വാർത്തകളും ഇവിടെ വായിക്കാം.</p><a class="btn" href="Ssf.html">👉 SSF വാർത്ത കാണൂ</a></div></div>
+
+<div class="section-title">📲 ഞങ്ങളെ ബന്ധപ്പെടൂ</div>
+<div class="whatsapp-box"><h2>📲 WhatsApp-ൽ വാർത്ത അയക്കൂ!</h2><p>നിന്റെ നാട്ടിലെ വാർത്ത, ഫോട്ടോ, വിശേഷം എന്തും ഞങ്ങൾക്ക് അയച്ച് തരൂ!</p><a class="btn btn-green" href="https://wa.me/919645564510?text=ഹലോ%20ICHUNETCKD%20NEWS%20ROOM!%20എനിക്ക്%20ഒരു%20വാർത്ത%20അയക്കാനുണ്ട്">💬 WhatsApp-ൽ മെസ്സേജ് അയക്കൂ</a></div>
 </div>
-
 <footer>© 2026 ICHUNETCKD NEWS ROOM<br>നമ്മുടെ വാർത്ത</footer>
 </body>
 </html>

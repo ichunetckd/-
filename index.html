@@ -3,96 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ചെക്കിയാട് | Ente Nadu</title>
+<title>ചെക്കിയാട് - Chekkiyad News</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; font-family: sans-serif; }
-body { background:#FFF8E7; color:#222; }
-header { background:#1A5D1A; color:white; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; gap:10px; }
-header b { font-size:20px; letter-spacing:1px; white-space:nowrap; }
-header span { font-size:11px; opacity:0.9; text-align:right; }
-.hero { padding:70px 20px; text-align:center; background: linear-gradient(#1A5D1A, #2E7D32); color:white; }
-.hero span { background:#FFC107; color:#000; padding:6px 14px; border-radius:20px; font-size:13px; font-weight:bold; }
-.hero h1 { font-size:52px; margin:18px 0 5px; line-height:1; }
-.hero h2 { font-size:28px; font-weight:normal; opacity:0.9; }
-.hero p { margin-top:15px; font-size:16px; opacity:0.9; }
-.section { padding:40px 20px; max-width:800px; margin:auto; }
-.section h2 { font-size:28px; color:#1A5D1A; margin-bottom:12px; }
-.section p { font-size:16px; line-height:1.7; }
-.cards { display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-top:20px; }
-.card { background:white; padding:20px; border-radius:16px; box-shadow:0 4px 15px rgba(0,0,0,0.08); }
-.card h3 { margin-bottom:8px; }
-.card p { font-size:14px; }
-.gallery { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:15px; }
-.gallery img { width:100%; height:220px; object-fit:cover; border-radius:14px; display:block; }
-.video-box { background:#111; color:white; height:200px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:18px; margin-top:15px; }
-footer { background:#1A5D1A; color:white; text-align:center; padding:20px; margin-top:20px; }
-/* ചലിക്കുന്ന വാർത്ത */
-.news-ticker { background:#D32F2F; color:white; overflow:hidden; padding:9px 0; font-size:14px; font-weight:bold; white-space:nowrap; border-radius:16px 16px 0 0; }
-.news-ticker span { display:inline-block; padding-left:100%; animation: moveNews 12s linear infinite; }
-@keyframes moveNews { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+* { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
+body { background:#FFF8E7; }
+header { background:#1A5D1A; color:white; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:10; }
+header b { font-size:22px; }
+.ticker { background:#D32F2F; color:white; overflow:hidden; padding:9px 0; font-size:14px; font-weight:bold; white-space:nowrap; }
+.track { display:flex; width:max-content; animation: move 20s linear infinite; }
+.track span { padding:0 25px; }
+@keyframes move { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+.wrap { max-width:700px; margin:15px auto; padding:0 12px; }
+.card { background:white; border-radius:16px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin-bottom:20px; }
+.card img { width:100%; display:block; }
+.card div { padding:18px; }
+.badge { background:#FFC107; color:#000; padding:4px 10px; border-radius:20px; font-size:12px; font-weight:bold; display:inline-block; margin-bottom:10px; }
+.card h2 { font-size:22px; line-height:1.4; margin-bottom:8px; }
+.card p { font-size:15px; line-height:1.7; color:#444; }
+.btn { display:block; background:#1A5D1A; color:white; text-align:center; padding:13px; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:14px; }
+.btn-green { background:#25D366; }
 </style>
 </head>
 <body>
+<header><b>🌴 ചെക്കിയാട്</b><span>📍 കോഴിക്കോട്</span></header>
+<div class="ticker"><div class="track">
+<span>💡 BREAKING: മുണ്ടോളി പള്ളി പരിസരം പ്രകാശപൂരിതമായി! •</span>
+<span>💡 BREAKING: മുണ്ടോളി പള്ളി പരിസരം പ്രകാശപൂരിതമായി! •</span>
+</div></div>
 
-<header><b>ചെക്കിയാട്</b><span>CHEK KIYAD • KERALA</span></header>
+<div class="wrap">
 
-<div class="hero">
-<span>ENTE NAATTINTE CHILA ROOPANGAL</span>
-<h1>ചെക്കിയാട്</h1>
-<h2>എന്റെ നാട്, എന്റെ ഓർമ്മകൾ</h2>
-<p>പാടവും, മലയും, മഴയും, മനുഷ്യരും - ഇതാണ് എന്റെ ചെക്കിയാട്.</p>
-</div>
-
-<!-- CHEKKIYAD NEWS - SSF -->
-<div style="max-width:800px; margin:20px auto; padding:0 15px;">
-  <h2 style="color:#1A5D1A; font-size:24px; margin-bottom:15px;">📰 നാട്ടിലെ വാർത്തകൾ</h2>
-  <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
-    <div class="news-ticker"><span>🔴 CHEKKIYAD NEWS • SSF CHEKKIYAD • ചെക്കിയാടിന്റെ അഭിമാനം, പുതിയ പ്രതീക്ഷ! • 🔴 CHEKKIYAD NEWS • SSF CHEKKIYAD •</span></div>
-    <div style="padding:20px;">
-      <h3 style="font-size:22px; line-height:1.4;">ചെക്കിയാടിന്റെ അഭിമാനം, പുതിയ പ്രതീക്ഷ!</h3>
-      <p style="margin:12px 0; line-height:1.7; font-size:15px;">
-      എസ്.എസ്.എഫ് ചെക്കിയാട് യൂണിറ്റിന്റെ 2027 വർഷത്തേക്കുള്ള പുതിയ സെക്രട്ടറിയേറ്റിന് ഒരായിരം അഭിനന്ദനങ്ങൾ!
-      <br><br>
-      പ്രസിഡന്റായി <b>സ്വാലിഹ് സി.എസ്</b>, ജനറൽ സെക്രട്ടറിയായി <b>സഅദ് സി</b>, ഫിനാൻസ് സെക്രട്ടറിയായി <b>ഫവാസ് ടി.കെ</b> എന്നിവരെ തെരഞ്ഞെടുത്തു.
-      </p>
-      <a href="https://ichunetckd.github.io/-/Ssf.html" style="display:block; background:#1A5D1A; color:white; text-align:center; padding:13px; border-radius:10px; text-decoration:none; font-weight:bold; font-size:16px;">
-        📄 മുഴുവൻ പോസ്റ്റർ കാണാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക →
-      </a>
-    </div>
-  </div>
-</div>
-<!-- NEWS END -->
-
-<div class="section">
-<h2>നാടിനെ കുറിച്ച്</h2>
-<p>കേരളത്തിലെ ഒരു കൊച്ചു ഗ്രാമമാണ് ചെക്കിയാട്. ഇവിടുത്തെ ഓരോ വഴിയും, ഓരോ വീടും, ഓരോ മനുഷ്യനും ഓരോ കഥയാണ്. ഈ വെബ്സൈറ്റ് ആ കഥകൾ പറയാൻ വേണ്ടിയാണ്.</p>
-</div>
-
-<div class="section">
-<h2>നാട്ടിന്റെ ചില രൂപങ്ങൾ</h2>
-<div class="cards">
-<div class="card"><h3>🌾 പാടവും മലയും</h3><p>പച്ചപ്പ് നിറഞ്ഞ വയലുകളും മലകളും.</p></div>
-<div class="card"><h3>🕌 നാടും ആളുകളും</h3><p>പള്ളിയും, മദ്രസയും, സ്കൂളും, നാട്ടുകാരും.</p></div>
-<div class="card"><h3>🎭 കലയും ഉത്സവവും</h3><p>ഉത്സവങ്ങളും കലാരൂപങ്ങളും ആഘോഷങ്ങളും.</p></div>
-<div class="card"><h3>❤️ ജീവിതം</h3><p>നാട്ടിലെ സാധാരണ ജീവിതവും ഓർമ്മകളും.</p></div>
+<!-- 1. മുണ്ടോളി വാർത്ത - മെയിൻ പേജിൽ ആദ്യം -->
+<div class="card">
+<img src="Screenshot_20261128-100515~2.jpg" alt="മുണ്ടോളി പള്ളി">
+<div>
+<span class="badge">🔴 പുതിയ വാർത്ത</span>
+<h2>മുണ്ടോളി പള്ളി പരിസരം ഇന്ന് പ്രകാശപൂരിതമായി!</h2>
+<p>പുതിയ മിനി മാസ്റ്റ് ലൈറ്റ് പ്രവർത്തിച്ച് തുടങ്ങി. NK ചന്ദ്രിക ടീച്ചറുടെ നിവേദനത്തിലൂടെയാണ് ഈ പ്രകാശം ലഭിച്ചത്.</p>
+<a class="btn" href="mundoli.html">👉 മുഴുവൻ വാർത്ത വായിക്കൂ</a>
+<a class="btn btn-green" href="https://wa.me/?text=💡%20മുണ്ടോളി%20പള്ളി%20പരിസരം%20പ്രകാശപൂരിതമായി!%20👇%20https://ichunetckd.github.io/-/mundoli.html">📲 WhatsApp-ൽ Share ചെയ്യൂ</a>
 </div>
 </div>
 
-<div class="section">
-<h2>ഫോട്ടോകൾ</h2>
-<p>നാടിന്റെ ഫോട്ടോകൾ.</p>
-<div class="gallery">
-<img src="file_00000000661482118667d076a4697217.png" alt="ചെക്കിയാട് - സമസ്ത 100" style="grid-column: span 2;">
+<!-- 2. SSF വാർത്ത -->
+<div class="card">
+<div>
+<span class="badge">📰 SSF വാർത്ത</span>
+<h2>SSF ചെക്കിയാട് യൂണിറ്റ് വാർത്തകൾ</h2>
+<p>SSF-ന്റെ എല്ലാ വാർത്തകളും ഇവിടെ വായിക്കാം.</p>
+<a class="btn" href="Ssf.html">👉 SSF വാർത്ത കാണൂ</a>
 </div>
 </div>
 
-<div class="section">
-<h2>വീഡിയോ</h2>
-<p>നാടിനെ കുറിച്ചുള്ള എന്റെ വീഡിയോ.</p>
-<div class="video-box">▶️ VIDEO ഇവിടെ വരും</div>
 </div>
-
-<footer>CHEK KIYAD | KERALA<br>DESIGN • PROMOTE • GROW</footer>
-
 </body>
 </html>

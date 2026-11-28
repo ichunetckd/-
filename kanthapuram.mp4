@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>കാന്തപുരം - പ്രവർത്തികൾ തന്നെയാണ് വിലാസം | ചെക്കിയാട്</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
+body { background:#FFF8E7; }
+header { background:#1A5D1A; color:white; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; }
+header a { color:white; text-decoration:none; }
+.wrap { max-width:700px; margin:20px auto; padding:0 15px; }
+.card { background:white; border-radius:16px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1); }
+video { width:100%; display:block; background:#000; }
+.card div { padding:22px; }
+.card h1 { font-size:25px; line-height:1.4; margin-bottom:6px; color:#8B0000; }
+.sub { color:#888; font-size:13px; margin-bottom:15px; }
+.card p { font-size:16px; line-height:1.85; margin-bottom:13px; color:#333; }
+.note { background:#FFF3E0; border-left:5px solid #D32F2F; border-radius:10px; padding:16px; margin:15px 0; }
+.note b { color:#B71C1C; }
+.quote { background:#E8F5E9; border-radius:12px; padding:16px; text-align:center; font-weight:bold; font-size:17px; line-height:1.6; margin:15px 0; color:#1A5D1A; }
+.btn { display:block; background:#25D366; color:white; text-align:center; padding:14px; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px; }
+.back { display:block; background:#1A5D1A; color:white; text-align:center; padding:13px; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:12px; }
+</style>
+</head>
+<body>
+<header><b>🌴 ചെക്കിയാട്</b><a href="https://ichunetckd.github.io/-/">🏠 Home</a></header>
+<div class="wrap">
+<div class="card">
+<video controls playsinline poster="">
+<source src="kanthapuram.mp4" type="video/mp4">
+നിങ്ങളുടെ ബ്രൗസറിൽ വീഡിയോ കാണാൻ കഴിയുന്നില്ല.
+</video>
+<div>
+<h1>കാന്തപുരം - പ്രവർത്തികൾ തന്നെയാണ് വിലാസം</h1>
+<p class="sub">📍 ചെക്കിയാട് ന്യൂസ് | കാന്തപുരത്തെ കുറിച്ച് ചെറിയ ഒരു കുറിപ്പ്</p>
 
+<div class="note">
+<p><b>ചെറിയ ഒരു കുറിപ്പ്:</b></p>
+<p>കാന്തപുരം എ.പി. അബൂബക്കർ മുസ്‌ലിയാർ - ഒരു പേരല്ല, ഒരു പ്രസ്ഥാനമാണ്. ജാതിയും മതവും നോക്കാതെ മനുഷ്യനുവേണ്ടി ജീവിച്ച മനുഷ്യൻ. വിമർശനങ്ങൾക്ക് മറുപടി പറഞ്ഞത് വാക്കുകൾ കൊണ്ടല്ല, പ്രവർത്തികൾ കൊണ്ടാണ്.</p>
+</div>
+
+<p>5,000+ വിദ്യാർത്ഥികൾക്ക് സൗജന്യ വിദ്യാഭ്യാസവും താമസവും ഭക്ഷണവും, 21,841+ അനാഥ കുട്ടികൾക്ക് സംരക്ഷണം, 3,500+ പേർ ഇന്ന് ഉത്തരവാദിത്തപ്പെട്ട സ്ഥാനങ്ങളിൽ, 17,000+ വീടുകൾ, 16,000+ കുടിവെള്ള പദ്ധതികൾ, 1,35,000+ പേർക്ക് തൊഴിൽ, 180+ ആംബുലൻസുകൾ, 1,000+ മെഡിക്കൽ എയ്ഡ് സെന്ററുകൾ.</p>
+
+<div class="quote">“ഒരു അനാഥക്കുട്ടിയുടെ വിശപ്പ് മാറ്റാൻ ഒരു വാർത്തയുടെയും ആവശ്യമുണ്ടായിരുന്നില്ല.”</div>
+
+<p>ഈ വഴി എളുപ്പമായിരുന്നില്ല. എത്ര വിമർശിച്ചാലും, ആയിരക്കണക്കിന് ജീവിതങ്ങൾ നന്മയ്ക്ക് സാക്ഷികളാണ്. അദ്ദേഹത്തിന്റെ പ്രവർത്തികൾ തന്നെയാണ് അദ്ദേഹത്തിന്റെ വിലാസം.</p>
+
+<a class="btn" href="https://wa.me/?text=❤️%20കാന്തപുരം%20-%20പ്രവർത്തികൾ%20തന്നെയാണ്%20വിലാസം%20👇%20https://ichunetckd.github.io/-/kanthapuram.html">📲 WhatsApp-ൽ Share ചെയ്യൂ</a>
+<a class="back" href="https://ichunetckd.github.io/-/">← മെയിൻ പേജിലേക്ക് പോകൂ</a>
+</div>
+</div>
+</div>
+</body>
+</html>

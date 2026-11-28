@@ -14,23 +14,41 @@ header b { font-size:22px; }
 .track span { padding:0 25px; }
 @keyframes move { from { transform:translateX(0); } to { transform:translateX(-50%); } }
 .wrap { max-width:700px; margin:15px auto; padding:0 12px; }
+.hero { background:linear-gradient(135deg,#1A5D1A,#2E7D32); color:white; border-radius:16px; padding:25px 20px; text-align:center; margin-bottom:20px; }
+.hero h1 { font-size:28px; margin-bottom:8px; }
+.hero p { font-size:15px; line-height:1.6; opacity:0.9; }
+.section-title { font-size:20px; font-weight:bold; margin:20px 0 12px 2px; border-left:5px solid #1A5D1A; padding-left:10px; }
 .card { background:white; border-radius:16px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin-bottom:20px; }
 .card img { width:100%; display:block; }
 .card div { padding:18px; }
 .badge { background:#FFC107; color:#000; padding:4px 10px; border-radius:20px; font-size:12px; font-weight:bold; display:inline-block; margin-bottom:10px; }
+.badge-green { background:#1A5D1A; color:white; }
+.badge-blue { background:#1976D2; color:white; }
 .card h2 { font-size:22px; line-height:1.4; margin-bottom:8px; }
 .card p { font-size:15px; line-height:1.7; color:#444; }
 .btn { display:block; background:#1A5D1A; color:white; text-align:center; padding:13px; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:14px; }
 .btn-green { background:#25D366; }
+footer { text-align:center; padding:20px; color:#888; font-size:13px; }
 </style>
 </head>
 <body>
 <header><b>🌴 ചെക്കിയാട്</b><span>📍 കോഴിക്കോട്</span></header>
 <div class="ticker"><div class="track">
 <span>💡 BREAKING: മുണ്ടോളി പള്ളി പരിസരം പ്രകാശപൂരിതമായി! •</span>
+<span>🌴 ചെക്കിയാട് എന്റെ നാട് - നമ്മുടെ നാടിന്റെ വാർത്തകൾ •</span>
 <span>💡 BREAKING: മുണ്ടോളി പള്ളി പരിസരം പ്രകാശപൂരിതമായി! •</span>
+<span>🌴 ചെക്കിയാട് എന്റെ നാട് - നമ്മുടെ നാടിന്റെ വാർത്തകൾ •</span>
 </div></div>
+
 <div class="wrap">
+
+<div class="hero">
+<h1>🌴 ചെക്കിയാട് എന്റെ നാട്</h1>
+<p>നമ്മുടെ നാടിന്റെ സ്നേഹവും, വാർത്തകളും, വിശേഷങ്ങളും - എല്ലാം ഒരിടത്ത്!</p>
+</div>
+
+<!-- 1. മുണ്ടോളി വാർത്ത -->
+<div class="section-title">🔴 പുതിയ വാർത്ത</div>
 <div class="card">
 <img src="Screenshot_20261128-100515%7E2.jpg" onerror="this.src='https://ichunetckd.github.io/Screenshot_20261128-100515%7E2.jpg'" alt="മുണ്ടോളി പള്ളി">
 <div>
@@ -41,6 +59,32 @@ header b { font-size:22px; }
 <a class="btn btn-green" href="https://wa.me/?text=💡%20മുണ്ടോളി%20പള്ളി%20പരിസരം%20പ്രകാശപൂരിതമായി!%20👇%20https://ichunetckd.github.io/-/mundoli.html">📲 WhatsApp-ൽ Share ചെയ്യൂ</a>
 </div>
 </div>
+
+<!-- 2. ചെക്കിയാട് എന്റെ നാട് -->
+<div class="section-title">🌴 ചെക്കിയാട് എന്റെ നാട്</div>
+<div class="card">
+<div>
+<span class="badge badge-green">🌴 നമ്മുടെ നാട്</span>
+<h2>ചെക്കിയാട് - എന്റെ നാട്, എന്റെ അഭിമാനം</h2>
+<p>കോഴിക്കോട് ജില്ലയിലെ മനോഹരമായ ഗ്രാമം - ചെക്കിയാട്. പച്ചപ്പും, സ്നേഹമുള്ള നാട്ടുകാരും, പള്ളികളും, ക്ഷേത്രങ്ങളും, സ്കൂളുകളും ചേർന്ന നമ്മുടെ സ്വന്തം നാട്. നാടിന്റെ എല്ലാ വിശേഷങ്ങളും ഇവിടെ വായിക്കാം.</p>
+<a class="btn" href="chekkiyad.html">👉 ചെക്കിയാടിനെ കുറിച്ച് കൂടുതൽ അറിയൂ</a>
+</div>
+</div>
+
+<!-- 3. കൊച്ചുനാമല -->
+<div class="section-title">⛰️ കൊച്ചുനാമല</div>
+<div class="card">
+<div>
+<span class="badge badge-blue">⛰️ കൊച്ചുനാമല</span>
+<h2>കൊച്ചുനാമല - നമ്മുടെ മലനാട്</h2>
+<p>കൊച്ചുനാമലയുടെ മനോഹരമായ കാഴ്ചകളും, നാട്ടുവിശേഷങ്ങളും, കൃഷിയും, പ്രകൃതി ഭംഗിയും. മലമുകളിൽ നിന്നുള്ള കാറ്റും, പച്ചപ്പും നിറഞ്ഞ നമ്മുടെ കൊച്ചുനാമല.</p>
+<p>കൊച്ചുനാമലയിലെ എല്ലാ വാർത്തകളും വിശേഷങ്ങളും ഇവിടെ ഉണ്ടാകും.</p>
+<a class="btn" href="kochunamala.html">👉 കൊച്ചുനാമല വാർത്തകൾ കാണൂ</a>
+</div>
+</div>
+
+<!-- 4. SSF -->
+<div class="section-title">📰 SSF വാർത്ത</div>
 <div class="card">
 <div>
 <span class="badge">📰 SSF വാർത്ത</span>
@@ -49,6 +93,20 @@ header b { font-size:22px; }
 <a class="btn" href="Ssf.html">👉 SSF വാർത്ത കാണൂ</a>
 </div>
 </div>
+
+<!-- 5. നാട്ടുവിശേഷം -->
+<div class="section-title">❤️ നാട്ടുവിശേഷങ്ങൾ</div>
+<div class="card">
+<div>
+<span class="badge badge-green">❤️ നമ്മുടെ നാട്</span>
+<h2>നാട്ടിലെ വിശേഷങ്ങൾ</h2>
+<p>കല്യാണം, ഉത്സവം, പള്ളി പെരുന്നാൾ, സ്കൂൾ വാർത്തകൾ - എല്ലാം ഇവിടെ!</p>
+<p>നിന്റെ നാട്ടുവാർത്ത അയക്കാൻ ആഗ്രഹമുണ്ടോ? WhatsApp-ൽ അയച്ചാൽ മതി!</p>
+<a class="btn btn-green" href="https://wa.me/?text=ഹലോ%20ചെക്കിയാട്%20ന്യൂസ്!%20എനിക്ക്%20ഒരു%20വാർത്ത%20അയക്കാനുണ്ട്">📲 വാർത്ത അയക്കൂ</a>
 </div>
+</div>
+
+</div>
+<footer>© 2026 ചെക്കിയാട് ന്യൂസ് | നമ്മുടെ നാട്, നമ്മുടെ വാർത്ത</footer>
 </body>
 </html>

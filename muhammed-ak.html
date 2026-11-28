@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>മുഹമ്മദ് ഏ.കെ ചെക്കിയാട് - കൊച്ചു ഗായകൻ</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
+body { background:#FFF8E7; }
+header { background:#1A5D1A; color:white; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; }
+header a { color:white; text-decoration:none; }
+.wrap { max-width:700px; margin:20px auto; padding:0 15px; }
+.card { background:white; border-radius:16px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1); }
+video { width:100%; display:block; background:#000; }
+.card div { padding:22px; }
+.card h1 { font-size:25px; line-height:1.4; margin-bottom:6px; color:#8B0000; }
+.card p { font-size:16px; line-height:1.85; margin-bottom:13px; color:#333; }
+.quote { background:#E8F5E9; border-radius:12px; padding:16px; text-align:center; font-weight:bold; font-size:17px; line-height:1.6; margin:15px 0; color:#1A5D1A; }
+textarea { width:100%; height:90px; padding:12px; border:2px solid #ddd; border-radius:10px; font-size:16px; margin-top:10px; outline:none; }
+textarea:focus { border-color:#1A5D1A; }
+.comment-btn { display:block; background:#1A5D1A; color:white; text-align:center; padding:14px; border-radius:10px; border:none; width:100%; font-weight:bold; font-size:16px; margin-top:10px; cursor:pointer; }
+.btn { display:block; background:#25D366; color:white; text-align:center; padding:14px; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:15px; }
+.back { display:block; background:#1A5D1A; color:white; text-align:center; padding:13px; border-radius:10px; text-decoration:none; font-weight:bold; margin-top:12px; }
+</style>
+</head>
+<body>
+<header><b>🌴 ചെക്കിയാട്</b><a href="https://ichunetckd.github.io/-/">🏠 Home</a></header>
+<div class="wrap"><div class="card">
+<video controls playsinline><source src="VID-20261128-WA0122.mp4" type="video/mp4"></video>
+<div>
+<h1>🎤 ചെക്കിയാടിന്റെ കൊച്ചു ഗായകൻ!</h1>
+<p>📍 ചെക്കിയാട് ന്യൂസ് | മുഹമ്മദ് ഏ.കെ ചെക്കിയാട്</p>
+<div class="quote">മുഹമ്മദ് ഏ.കെ ചെക്കിയാടിന്റെ മനോഹരമായ പാട്ട് ❤️<br>ഈ കൊച്ചു മിടുക്കന്റെ ശബ്ദം കേട്ട് ഒരു ❤️ ഇട്ടിട്ട് പോകൂ!</div>
+<p>ഈ കുഞ്ഞു ശബ്ദം നിങ്ങൾക്ക് എങ്ങനെ തോന്നി? താഴെ അഭിപ്രായം എഴുതൂ 👇</p>
+<h3 style="margin-top:10px;">💬 നിങ്ങളുടെ അഭിപ്രായം പറയൂ</h3>
+<textarea id="comment" placeholder="മുഹമ്മദിന്റെ പാട്ട് എങ്ങനെ ഉണ്ടായിരുന്നു? ഇവിടെ എഴുതൂ..."></textarea>
+<button class="comment-btn" onclick="sendComment()">📩 അഭിപ്രായം അയക്കൂ</button>
+<a class="btn" href="https://wa.me/?text=🎤%20ചെക്കിയാടിന്റെ%20കൊച്ചു%20ഗായകൻ%20മുഹമ്മദ്%20ഏ.കെ%20👇%20https://ichunetckd.github.io/-/muhammed-ak.html">📲 WhatsApp-ൽ Share ചെയ്യൂ</a>
+<a class="back" href="https://ichunetckd.github.io/-/">← മെയിൻ പേജിലേക്ക് പോകൂ</a>
+</div></div></div>
+<script>
+function sendComment(){
+  var c = document.getElementById('comment').value;
+  if(!c){ alert('ദയവായി അഭിപ്രായം എഴുതൂ!'); return; }
+  var msg = "മുഹമ്മദ് ഏ.കെ ചെക്കിയാടിന്റെ പാട്ടിനെ കുറിച്ച് അഭിപ്രായം: " + c;
+  window.open("https://wa.me/919645564510?text=" + encodeURIComponent(msg), "_blank");
+}
+</script>
+</body>
+</html>

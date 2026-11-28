@@ -7,8 +7,9 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; font-family: sans-serif; }
 body { background:#FFF8E7; color:#222; }
-header { background:#1A5D1A; color:white; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; }
-header b { font-size:20px; letter-spacing:1px; }
+header { background:#1A5D1A; color:white; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; gap:10px; }
+header b { font-size:20px; letter-spacing:1px; white-space:nowrap; }
+header span { font-size:11px; opacity:0.9; text-align:right; }
 .hero { padding:70px 20px; text-align:center; background: linear-gradient(#1A5D1A, #2E7D32); color:white; }
 .hero span { background:#FFC107; color:#000; padding:6px 14px; border-radius:20px; font-size:13px; font-weight:bold; }
 .hero h1 { font-size:52px; margin:18px 0 5px; line-height:1; }
@@ -22,16 +23,26 @@ header b { font-size:20px; letter-spacing:1px; }
 .card h3 { margin-bottom:8px; }
 .card p { font-size:14px; }
 .gallery { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:15px; }
-.gallery div { background:#ddd; height:140px; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:14px; color:#555; }
+.gallery img { width:100%; height:180px; object-fit:cover; border-radius:14px; display:block; }
+.gallery div { background:#ddd; height:180px; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:14px; color:#555; }
 .video-box { background:#111; color:white; height:200px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:18px; margin-top:15px; }
 footer { background:#1A5D1A; color:white; text-align:center; padding:20px; margin-top:20px; }
 </style>
 </head>
-<body><!-- CHEKKIYAD NEWS SECTION -->
-  <!-- CHEKKIYAD NEWS - SSF -->
+<body>
+
+<header><b>ചെക്കിയാട്</b><span>CHEK KIYAD • KERALA</span></header>
+
+<div class="hero">
+<span>ENTE NAATTINTE CHILA ROOPANGAL</span>
+<h1>ചെക്കിയാട്</h1>
+<h2>എന്റെ നാട്, എന്റെ ഓർമ്മകൾ</h2>
+<p>പാടവും, മലയും, മഴയും, മനുഷ്യരും - ഇതാണ് എന്റെ ചെക്കിയാട്.</p>
+</div>
+
+<!-- CHEKKIYAD NEWS - SSF -->
 <div style="max-width:800px; margin:20px auto; padding:0 15px;">
   <h2 style="color:#1A5D1A; font-size:24px; margin-bottom:15px;">📰 നാട്ടിലെ വാർത്തകൾ</h2>
-
   <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
     <div style="background:#D32F2F; color:white; padding:8px 15px; font-size:13px; font-weight:bold;">🔴 CHEKKIYAD NEWS • SSF CHEKKIYAD</div>
     <div style="padding:20px;">
@@ -41,23 +52,13 @@ footer { background:#1A5D1A; color:white; text-align:center; padding:20px; margi
       <br><br>
       പ്രസിഡന്റായി <b>സ്വാലിഹ് സി.എസ്</b>, ജനറൽ സെക്രട്ടറിയായി <b>സഅദ് സി</b>, ഫിനാൻസ് സെക്രട്ടറിയായി <b>ഫവാസ് ടി.കെ</b> എന്നിവരെ തെരഞ്ഞെടുത്തു.
       </p>
-
-      <!-- ഇതാണ് ചിത്രം / പോസ്റ്റർ കാണാനുള്ള ബട്ടൺ -->
       <a href="https://ichunetckd.github.io/-/Ssf.html" style="display:block; background:#1A5D1A; color:white; text-align:center; padding:13px; border-radius:10px; text-decoration:none; font-weight:bold; font-size:16px;">
         📄 മുഴുവൻ പോസ്റ്റർ കാണാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക →
       </a>
     </div>
   </div>
-<
-
-<header><b>ചെക്കിയാട്</b><span>CHEK KIYAD • KERALA</span></header>
-
-<div class="hero">8
-<span>ENTE NAATTINTE CHILA ROOPANGAL</span>
-<h1>ചെക്കിയാട്</h1>
-<h2>എന്റെ നാട്, എന്റെ ഓർമ്മകൾ</h2>
-<p>പാടവും, മലയും, മഴയും, മനുഷ്യരും - ഇതാണ് എന്റെ ചെക്കിയാട്.</p>
 </div>
+<!-- NEWS END -->
 
 <div class="section">
 <h2>നാടിനെ കുറിച്ച്</h2>
@@ -76,10 +77,12 @@ footer { background:#1A5D1A; color:white; text-align:center; padding:20px; margi
 
 <div class="section">
 <h2>ഫോട്ടോകൾ</h2>
-<p>നാടിന്റെ ഫോട്ടോകൾ ഇവിടെ വരും.</p>
+<p>നാടിന്റെ ഫോട്ടോകൾ.</p>
 <div class="gallery">
-<div>Photo 1</div><div>Photo 2</div>
-<div>Photo 3</div><div>Photo 4</div>
+<img src="photo1.jpg" alt="ചെക്കിയാട് - സമസ്ത 100">
+<img src="photo2.jpg" alt="ചെക്കിയാട് ഫോട്ടോ 2">
+<img src="photo3.jpg" alt="ചെക്കിയാട് ഫോട്ടോ 3">
+<img src="photo4.jpg" alt="ചെക്കിയാട് ഫോട്ടോ 4">
 </div>
 </div>
 
@@ -91,9 +94,5 @@ footer { background:#1A5D1A; color:white; text-align:center; padding:20px; margi
 
 <footer>CHEK KIYAD | KERALA<br>DESIGN • PROMOTE • GROW</footer>
 
-< →
-      </a>
-    </div>
-  </div>
-</div>
-  html>
+</body>
+</html>

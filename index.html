@@ -19,12 +19,13 @@ header b{font-size:20px;letter-spacing:1px}
 .spark{position:absolute;font-size:18px;animation:sparkle 1s infinite alternate;z-index:3}
 .s1{top:15%;left:12%}.s2{top:25%;right:14%;animation-delay:.2s}.s3{top:55%;left:8%;animation-delay:.4s}.s4{top:50%;right:8%;animation-delay:.6s}.s5{top:10%;left:48%;animation-delay:.8s}.s6{bottom:15%;left:42%;animation-delay:1s}
 @keyframes sparkle{from{opacity:.2;transform:scale(.6)}to{opacity:1;transform:scale(1.4)}}
+
+/* ലോഗോ - പ്ലേ ബട്ടൻ ഇല്ല */
 .logo-box{width:175px;height:175px;margin:0 auto;background:linear-gradient(135deg,#007bff,#00c6ff,#0047ff);border-radius:38px;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 0 60px #00aaff;z-index:2}
-.i-e{font-size:98px;font-weight:900;letter-spacing:-6px;color:white;line-height:1}
-.earth{font-size:64px;display:inline-block;animation:spin 3.5s linear infinite}
+.i-e{display:flex;align-items:center;gap:6px;font-size:82px;font-weight:900;color:white;line-height:1;letter-spacing:0}
+.earth{font-size:56px;display:inline-block;animation:spin 3.5s linear infinite}
 @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-.play-btn{position:absolute;right:-8px;top:50%;transform:translateY(-50%);width:58px;height:58px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;color:#007bff;box-shadow:0 0 20px white,0 0 40px #00ccff;z-index:5;animation:pulse 1s infinite alternate}
-@keyframes pulse{from{transform:translateY(-50%) scale(1)}to{transform:translateY(-50%) scale(1.12)}}
+
 .logo-banner h1{color:white;font-size:30px;margin-top:16px;position:relative;z-index:2}
 .news-room{font-size:36px;font-weight:900;color:#00e5ff;text-shadow:0 0 10px #00e5ff,0 0 30px #00e5ff,0 0 70px #0088ff;animation:neon .9s infinite alternate;margin-top:5px;position:relative;z-index:2}
 @keyframes neon{from{opacity:.7}to{opacity:1}}
@@ -59,7 +60,7 @@ footer{text-align:center;padding:20px;color:#888;font-size:13px}
 <div class="light l1"></div><div class="light l2"></div><div class="light l3"></div><div class="light l4"></div><div class="light l5"></div><div class="light l6"></div>
 <div class="beam b1"></div><div class="beam b2"></div><div class="beam b3"></div>
 <div class="spark s1">✨</div><div class="spark s2">⭐</div><div class="spark s3">✨</div><div class="spark s4">⭐</div><div class="spark s5">✨</div><div class="spark s6">⭐</div>
-<div class="logo-box"><div class="i-e">I<span class="earth">🌍</span>E</div><div class="play-btn">▶</div></div>
+<div class="logo-box"><div class="i-e"><span>I</span><span class="earth">🌍</span><span>E</span></div></div>
 <h1>ICHUNETCKD</h1><div class="news-room">ന്യൂസ് റൂം</div><div class="tagline">LIVE • BREAKING • NEWS</div>
 </div>
 <div class="ticker"><div class="track">
@@ -72,22 +73,16 @@ footer{text-align:center;padding:20px;color:#888;font-size:13px}
 </div></div>
 <div class="wrap">
 <div class="hero"><h1>🌴 നമ്മുടെ നാട്</h1><p>നമ്മുടെ നാടിന്റെ സ്നേഹവും, വാർത്തകളും, വിശേഷങ്ങളും - എല്ലാം ഒരിടത്ത്!</p></div>
-
 <div class="section-title">🎤 പുതിയ വാർത്ത</div>
 <div class="card"><div><span class="badge">🎤 കൊച്ചു ഗായകൻ</span><h2>🎤 നമ്മുടെ കൊച്ചു ഗായകൻ!</h2><p>മുഹമ്മദ് ഏ.കെ യുടെ മനോഹരമായ പാട്ട് ❤️ ഈ കൊച്ചു മിടുക്കന്റെ ശബ്ദം കേട്ട് നോക്കൂ!</p><a class="btn btn-green" href="muhammed-ak.html">▶️ വീഡിയോ കാണൂ</a></div></div>
-
 <div class="section-title">🔴 പുതിയ വാർത്ത</div>
 <div class="card"><img src="Screenshot_20261128-100515%7E2.jpg" onerror="this.src='https://ichunetckd.github.io/Screenshot_20261128-100515%7E2.jpg'" alt="മുണ്ടോളി പള്ളി"><div><span class="badge">🔴 പുതിയ വാർത്ത</span><h2>മുണ്ടോളി പള്ളി പരിസരം ഇന്ന് പ്രകാശപൂരിതമായി!</h2><p>പുതിയ മിനി മാസ്റ്റ് ലൈറ്റ് പ്രവർത്തിച്ച് തുടങ്ങി. NK ചന്ദ്രിക ടീച്ചറുടെ നിവേദനത്തിലൂടെയാണ് ഈ പ്രകാശം ലഭിച്ചത്.</p><a class="btn" href="mundoli.html">👉 മുഴുവൻ വാർത്ത വായിക്കൂ</a></div></div>
-
 <div class="section-title">❤️ പ്രത്യേക വാർത്ത</div>
 <div class="card"><div><span class="badge">❤️ കാന്തപുരം</span><h2>കാന്തപുരം - പ്രവർത്തികൾ തന്നെയാണ് വിലാസം</h2><p>5,000+ വിദ്യാർത്ഥികൾക്ക് സൗജന്യ വിദ്യാഭ്യാസം, 21,841+ അനാഥ കുട്ടികൾക്ക് സംരക്ഷണം, 17,000+ വീടുകൾ... അദ്ദേഹം മറുപടി നൽകുന്നത് വാക്കുകൾ കൊണ്ടല്ല, പ്രവർത്തികൾ കൊണ്ടാണ്!</p><a class="btn" href="kanthapuram.html">👉 വീഡിയോയോടെ മുഴുവൻ വാർത്ത വായിക്കൂ</a></div></div>
-
 <div class="section-title">🌴 നമ്മുടെ നാട് - കുറിച്ച്</div>
 <div class="card"><div><span class="badge badge-green">🌴 നമ്മുടെ നാട്</span><h2>നമ്മുടെ നാട്, നമ്മുടെ അഭിമാനം</h2><p>പച്ചപുതച്ച വയലുകളും, മലകളും, തോടുകളും, തെങ്ങിൻ തോപ്പുകളും ചേർന്ന പ്രകൃതി ഭംഗിയുള്ള നാട്.</p><p>ഹിന്ദുവും മുസ്ലീമും ക്രിസ്ത്യാനിയും ഒരുമിച്ച് സ്നേഹത്തോടെയും സാഹോദര്യത്തോടെയും ജീവിക്കുന്ന നാടാണിത്.</p><p>എവിടെ പോയാലും, എത്ര ദൂരെ പോയാലും മനസ്സിൽ എന്നും <b>നമ്മുടെ നാട്</b> തന്നെ!</p></div></div>
-
 <div class="section-title">📰 SSF വാർത്ത</div>
 <div class="card"><div><span class="badge">📰 SSF വാർത്ത</span><h2>SSF യൂണിറ്റ് വാർത്തകൾ</h2><p>SSF-ന്റെ എല്ലാ വാർത്തകളും ഇവിടെ വായിക്കാം.</p><a class="btn" href="Ssf.html">👉 SSF വാർത്ത കാണൂ</a></div></div>
-
 <div class="section-title">📲 ഞങ്ങളെ ബന്ധപ്പെടൂ</div>
 <div class="whatsapp-box"><h2>📲 WhatsApp-ൽ വാർത്ത അയക്കൂ!</h2><p>നിന്റെ നാട്ടിലെ വാർത്ത, ഫോട്ടോ, വിശേഷം എന്തും ഞങ്ങൾക്ക് അയച്ച് തരൂ!</p><a class="btn btn-green" href="https://wa.me/919645564510?text=ഹലോ%20ICHUNETCKD%20NEWS%20ROOM!%20എനിക്ക്%20ഒരു%20വാർത്ത%20അയക്കാനുണ്ട്">💬 WhatsApp-ൽ മെസ്സേജ് അയക്കൂ</a></div>
 </div>

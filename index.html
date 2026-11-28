@@ -24,9 +24,12 @@ header span { font-size:11px; opacity:0.9; text-align:right; }
 .card p { font-size:14px; }
 .gallery { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:15px; }
 .gallery img { width:100%; height:220px; object-fit:cover; border-radius:14px; display:block; }
-.gallery div { background:#ddd; height:140px; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:14px; color:#555; }
 .video-box { background:#111; color:white; height:200px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:18px; margin-top:15px; }
 footer { background:#1A5D1A; color:white; text-align:center; padding:20px; margin-top:20px; }
+/* ചലിക്കുന്ന വാർത്ത */
+.news-ticker { background:#D32F2F; color:white; overflow:hidden; padding:9px 0; font-size:14px; font-weight:bold; white-space:nowrap; border-radius:16px 16px 0 0; }
+.news-ticker span { display:inline-block; padding-left:100%; animation: moveNews 12s linear infinite; }
+@keyframes moveNews { from { transform: translateX(0); } to { transform: translateX(-100%); } }
 </style>
 </head>
 <body>
@@ -44,7 +47,7 @@ footer { background:#1A5D1A; color:white; text-align:center; padding:20px; margi
 <div style="max-width:800px; margin:20px auto; padding:0 15px;">
   <h2 style="color:#1A5D1A; font-size:24px; margin-bottom:15px;">📰 നാട്ടിലെ വാർത്തകൾ</h2>
   <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
-    <div style="background:#D32F2F; color:white; padding:8px 15px; font-size:13px; font-weight:bold;">🔴 CHEKKIYAD NEWS • SSF CHEKKIYAD</div>
+    <div class="news-ticker"><span>🔴 CHEKKIYAD NEWS • SSF CHEKKIYAD • ചെക്കിയാടിന്റെ അഭിമാനം, പുതിയ പ്രതീക്ഷ! • 🔴 CHEKKIYAD NEWS • SSF CHEKKIYAD •</span></div>
     <div style="padding:20px;">
       <h3 style="font-size:22px; line-height:1.4;">ചെക്കിയാടിന്റെ അഭിമാനം, പുതിയ പ്രതീക്ഷ!</h3>
       <p style="margin:12px 0; line-height:1.7; font-size:15px;">

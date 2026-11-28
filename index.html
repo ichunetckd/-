@@ -20,11 +20,11 @@ header b{font-size:20px;letter-spacing:1px}
 .s1{top:15%;left:12%}.s2{top:25%;right:14%;animation-delay:.2s}.s3{top:55%;left:8%;animation-delay:.4s}.s4{top:50%;right:8%;animation-delay:.6s}.s5{top:10%;left:48%;animation-delay:.8s}.s6{bottom:15%;left:42%;animation-delay:1s}
 @keyframes sparkle{from{opacity:.2;transform:scale(.6)}to{opacity:1;transform:scale(1.4)}}
 
-/* ലോഗോ - പ്ലേ ബട്ടൻ ഇല്ല */
-.logo-box{width:175px;height:175px;margin:0 auto;background:linear-gradient(135deg,#007bff,#00c6ff,#0047ff);border-radius:38px;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 0 60px #00aaff;z-index:2}
-.i-e{display:flex;align-items:center;gap:6px;font-size:82px;font-weight:900;color:white;line-height:1;letter-spacing:0}
-.earth{font-size:56px;display:inline-block;animation:spin 3.5s linear infinite}
+/* === വലിയ ഭൂമി + അതിനുള്ളിൽ നിന്റെ ലോഗോ === */
+.earth-wrap{position:relative;width:290px;height:290px;margin:0 auto;z-index:2;display:flex;align-items:center;justify-content:center}
+.big-globe{position:absolute;inset:0;font-size:270px;line-height:290px;text-align:center;animation:spin 12s linear infinite;filter:drop-shadow(0 0 30px #00aaff)}
 @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.logo-img{position:relative;z-index:3;width:145px;height:145px;object-fit:cover;border-radius:32px;box-shadow:0 0 30px #00aaff,0 0 60px #007bff,0 0 0 5px rgba(255,255,255,.95)}
 
 .logo-banner h1{color:white;font-size:30px;margin-top:16px;position:relative;z-index:2}
 .news-room{font-size:36px;font-weight:900;color:#00e5ff;text-shadow:0 0 10px #00e5ff,0 0 30px #00e5ff,0 0 70px #0088ff;animation:neon .9s infinite alternate;margin-top:5px;position:relative;z-index:2}
@@ -60,7 +60,13 @@ footer{text-align:center;padding:20px;color:#888;font-size:13px}
 <div class="light l1"></div><div class="light l2"></div><div class="light l3"></div><div class="light l4"></div><div class="light l5"></div><div class="light l6"></div>
 <div class="beam b1"></div><div class="beam b2"></div><div class="beam b3"></div>
 <div class="spark s1">✨</div><div class="spark s2">⭐</div><div class="spark s3">✨</div><div class="spark s4">⭐</div><div class="spark s5">✨</div><div class="spark s6">⭐</div>
-<div class="logo-box"><div class="i-e"><span>I</span><span class="earth">🌍</span><span>E</span></div></div>
+
+<!-- വലിയ ഭൂമി + ഉള്ളിൽ നിന്റെ ലോഗോ -->
+<div class="earth-wrap">
+<div class="big-globe">🌍</div>
+<img class="logo-img" src="logo.jpg" onerror="this.src='https://ichunetckd.github.io/logo.jpg'" alt="ICHUNETCKD Logo">
+</div>
+
 <h1>ICHUNETCKD</h1><div class="news-room">ന്യൂസ് റൂം</div><div class="tagline">LIVE • BREAKING • NEWS</div>
 </div>
 <div class="ticker"><div class="track">

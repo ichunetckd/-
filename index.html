@@ -9,27 +9,7 @@
 body{background:#FFF8E7}
 header{background:#1A5D1A;color:white;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
 header b{font-size:20px;letter-spacing:1px}
-.logo-banner{background:#020617;padding:30px 15px 25px;text-align:center;position:relative;overflow:hidden}
-.light{position:absolute;width:110px;height:110px;border-radius:50%;filter:blur(35px);opacity:.85;animation:blink .8s infinite alternate}
-.l1{top:-10px;left:3%;background:#ff0055}.l2{top:-10px;left:30%;background:#00ccff;animation-delay:.15s}.l3{top:-10px;right:30%;background:#ffcc00;animation-delay:.3s}.l4{top:-10px;right:3%;background:#ff00ff;animation-delay:.45s}.l5{bottom:0;left:12%;background:#00ff88;animation-delay:.6s}.l6{bottom:0;right:12%;background:#ff6600;animation-delay:.75s}
-@keyframes blink{from{opacity:.3;transform:scale(.7)}to{opacity:1;transform:scale(1.35)}}
-.beam{position:absolute;top:-10px;width:5px;height:220px;transform-origin:top;animation:swing 1.8s infinite alternate;opacity:.7}
-.b1{left:18%;background:linear-gradient(to bottom,#ff0055,transparent)}.b2{left:50%;background:linear-gradient(to bottom,#00ccff,transparent);animation-delay:.4s}.b3{left:82%;background:linear-gradient(to bottom,#ffcc00,transparent);animation-delay:.8s}
-@keyframes swing{from{transform:rotate(-22deg)}to{transform:rotate(22deg)}}
-.spark{position:absolute;font-size:18px;animation:sparkle 1s infinite alternate;z-index:3}
-.s1{top:15%;left:12%}.s2{top:25%;right:14%;animation-delay:.2s}.s3{top:55%;left:8%;animation-delay:.4s}.s4{top:50%;right:8%;animation-delay:.6s}.s5{top:10%;left:48%;animation-delay:.8s}.s6{bottom:15%;left:42%;animation-delay:1s}
-@keyframes sparkle{from{opacity:.2;transform:scale(.6)}to{opacity:1;transform:scale(1.4)}}
-
-/* === വലിയ ഭൂമി + അതിനുള്ളിൽ നിന്റെ ലോഗോ === */
-.earth-wrap{position:relative;width:290px;height:290px;margin:0 auto;z-index:2;display:flex;align-items:center;justify-content:center}
-.big-globe{position:absolute;inset:0;font-size:270px;line-height:290px;text-align:center;animation:spin 12s linear infinite;filter:drop-shadow(0 0 30px #00aaff)}
-@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-.logo-img{position:relative;z-index:3;width:145px;height:145px;object-fit:cover;border-radius:32px;box-shadow:0 0 30px #00aaff,0 0 60px #007bff,0 0 0 5px rgba(255,255,255,.95)}
-
-.logo-banner h1{color:white;font-size:30px;margin-top:16px;position:relative;z-index:2}
-.news-room{font-size:36px;font-weight:900;color:#00e5ff;text-shadow:0 0 10px #00e5ff,0 0 30px #00e5ff,0 0 70px #0088ff;animation:neon .9s infinite alternate;margin-top:5px;position:relative;z-index:2}
-@keyframes neon{from{opacity:.7}to{opacity:1}}
-.tagline{color:#ddd;font-size:14px;margin-top:8px;position:relative;z-index:2}
+.banner-img{width:100%;display:block}
 .ticker{background:#D32F2F;color:white;overflow:hidden;padding:9px 0;font-size:14px;font-weight:bold;white-space:nowrap}
 .track{display:flex;width:max-content;animation:move 20s linear infinite}
 .track span{padding:0 25px}
@@ -56,19 +36,10 @@ footer{text-align:center;padding:20px;color:#888;font-size:13px}
 </head>
 <body>
 <header><b>ICHUNETCKD NEWS ROOM</b><span>🔴 LIVE</span></header>
-<div class="logo-banner">
-<div class="light l1"></div><div class="light l2"></div><div class="light l3"></div><div class="light l4"></div><div class="light l5"></div><div class="light l6"></div>
-<div class="beam b1"></div><div class="beam b2"></div><div class="beam b3"></div>
-<div class="spark s1">✨</div><div class="spark s2">⭐</div><div class="spark s3">✨</div><div class="spark s4">⭐</div><div class="spark s5">✨</div><div class="spark s6">⭐</div>
 
-<!-- വലിയ ഭൂമി + ഉള്ളിൽ നിന്റെ ലോഗോ -->
-<div class="earth-wrap">
-<div class="big-globe">🌍</div>
-<img class="logo-img" src="logo.jpg" onerror="this.src='https://ichunetckd.github.io/logo.jpg'" alt="ICHUNETCKD Logo">
-</div>
+<!-- നിന്റെ ഫയൽ തന്നെ ബാനർ -->
+<img class="banner-img" src="Screenshot_20261127-233442%7E2.jpg" onerror="this.onerror=null;this.src='Screenshot_20261127-233442~2.jpg'" alt="ICHUNETCKD NEWS ROOM">
 
-<h1>ICHUNETCKD</h1><div class="news-room">ന്യൂസ് റൂം</div><div class="tagline">LIVE • BREAKING • NEWS</div>
-</div>
 <div class="ticker"><div class="track">
 <span>💡 BREAKING: മുണ്ടോളി പള്ളി പരിസരം പ്രകാശപൂരിതമായി! •</span>
 <span>🎤 നമ്മുടെ കൊച്ചു ഗായകൻ മുഹമ്മദ് ഏ.കെ •</span>
@@ -77,21 +48,29 @@ footer{text-align:center;padding:20px;color:#888;font-size:13px}
 <span>🎤 നമ്മുടെ കൊച്ചു ഗായകൻ മുഹമ്മദ് ഏ.കെ •</span>
 <span>❤️ കാന്തപുരം - പ്രവർത്തികൾ തന്നെയാണ് വിലാസം •</span>
 </div></div>
+
 <div class="wrap">
 <div class="hero"><h1>🌴 നമ്മുടെ നാട്</h1><p>നമ്മുടെ നാടിന്റെ സ്നേഹവും, വാർത്തകളും, വിശേഷങ്ങളും - എല്ലാം ഒരിടത്ത്!</p></div>
+
 <div class="section-title">🎤 പുതിയ വാർത്ത</div>
 <div class="card"><div><span class="badge">🎤 കൊച്ചു ഗായകൻ</span><h2>🎤 നമ്മുടെ കൊച്ചു ഗായകൻ!</h2><p>മുഹമ്മദ് ഏ.കെ യുടെ മനോഹരമായ പാട്ട് ❤️ ഈ കൊച്ചു മിടുക്കന്റെ ശബ്ദം കേട്ട് നോക്കൂ!</p><a class="btn btn-green" href="muhammed-ak.html">▶️ വീഡിയോ കാണൂ</a></div></div>
+
 <div class="section-title">🔴 പുതിയ വാർത്ത</div>
 <div class="card"><img src="Screenshot_20261128-100515%7E2.jpg" onerror="this.src='https://ichunetckd.github.io/Screenshot_20261128-100515%7E2.jpg'" alt="മുണ്ടോളി പള്ളി"><div><span class="badge">🔴 പുതിയ വാർത്ത</span><h2>മുണ്ടോളി പള്ളി പരിസരം ഇന്ന് പ്രകാശപൂരിതമായി!</h2><p>പുതിയ മിനി മാസ്റ്റ് ലൈറ്റ് പ്രവർത്തിച്ച് തുടങ്ങി. NK ചന്ദ്രിക ടീച്ചറുടെ നിവേദനത്തിലൂടെയാണ് ഈ പ്രകാശം ലഭിച്ചത്.</p><a class="btn" href="mundoli.html">👉 മുഴുവൻ വാർത്ത വായിക്കൂ</a></div></div>
+
 <div class="section-title">❤️ പ്രത്യേക വാർത്ത</div>
 <div class="card"><div><span class="badge">❤️ കാന്തപുരം</span><h2>കാന്തപുരം - പ്രവർത്തികൾ തന്നെയാണ് വിലാസം</h2><p>5,000+ വിദ്യാർത്ഥികൾക്ക് സൗജന്യ വിദ്യാഭ്യാസം, 21,841+ അനാഥ കുട്ടികൾക്ക് സംരക്ഷണം, 17,000+ വീടുകൾ... അദ്ദേഹം മറുപടി നൽകുന്നത് വാക്കുകൾ കൊണ്ടല്ല, പ്രവർത്തികൾ കൊണ്ടാണ്!</p><a class="btn" href="kanthapuram.html">👉 വീഡിയോയോടെ മുഴുവൻ വാർത്ത വായിക്കൂ</a></div></div>
+
 <div class="section-title">🌴 നമ്മുടെ നാട് - കുറിച്ച്</div>
 <div class="card"><div><span class="badge badge-green">🌴 നമ്മുടെ നാട്</span><h2>നമ്മുടെ നാട്, നമ്മുടെ അഭിമാനം</h2><p>പച്ചപുതച്ച വയലുകളും, മലകളും, തോടുകളും, തെങ്ങിൻ തോപ്പുകളും ചേർന്ന പ്രകൃതി ഭംഗിയുള്ള നാട്.</p><p>ഹിന്ദുവും മുസ്ലീമും ക്രിസ്ത്യാനിയും ഒരുമിച്ച് സ്നേഹത്തോടെയും സാഹോദര്യത്തോടെയും ജീവിക്കുന്ന നാടാണിത്.</p><p>എവിടെ പോയാലും, എത്ര ദൂരെ പോയാലും മനസ്സിൽ എന്നും <b>നമ്മുടെ നാട്</b> തന്നെ!</p></div></div>
+
 <div class="section-title">📰 SSF വാർത്ത</div>
 <div class="card"><div><span class="badge">📰 SSF വാർത്ത</span><h2>SSF യൂണിറ്റ് വാർത്തകൾ</h2><p>SSF-ന്റെ എല്ലാ വാർത്തകളും ഇവിടെ വായിക്കാം.</p><a class="btn" href="Ssf.html">👉 SSF വാർത്ത കാണൂ</a></div></div>
+
 <div class="section-title">📲 ഞങ്ങളെ ബന്ധപ്പെടൂ</div>
 <div class="whatsapp-box"><h2>📲 WhatsApp-ൽ വാർത്ത അയക്കൂ!</h2><p>നിന്റെ നാട്ടിലെ വാർത്ത, ഫോട്ടോ, വിശേഷം എന്തും ഞങ്ങൾക്ക് അയച്ച് തരൂ!</p><a class="btn btn-green" href="https://wa.me/919645564510?text=ഹലോ%20ICHUNETCKD%20NEWS%20ROOM!%20എനിക്ക്%20ഒരു%20വാർത്ത%20അയക്കാനുണ്ട്">💬 WhatsApp-ൽ മെസ്സേജ് അയക്കൂ</a></div>
 </div>
+
 <footer>© 2026 ICHUNETCKD NEWS ROOM<br>നമ്മുടെ വാർത്ത</footer>
 </body>
 </html>
